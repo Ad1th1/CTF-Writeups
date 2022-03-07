@@ -1,0 +1,14 @@
+Problem Statement:
+In RSA, a small e value can be problematic, but what about N? Can you decrypt this? values
+
+Points: 20
+
+Hints:
+1. Bits are expensive, I used only a little bit over 100 to save money
+
+Solution:
+Just paste everything into https://www.dcode.fr/rsa-cipher
+
+Flag:
+
+picoCTF{sma11_N_n0_g0od_13686679}
