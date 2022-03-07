@@ -1,0 +1,18 @@
+Problem Statement:
+Best Stuff - Cheap Stuff, Buy Buy Buy... Store Instance: source. The shop is open for business at nc mercury.picoctf.net 10337.
+
+Points: 50
+
+Hints:
+1. Always check edge cases when programming
+
+Solution:
+use netcat in your terminal 
+nc mercury.picoctf.net 10337
+
+Buy negative number of apples 
+Use the money got to buy the fruitful flag.
+The list of numbers we get can be converted to text using an ASCII to text converter (https://codebeautify.org/ascii-to-text)
+
+Flag:
+https://codebeautify.org/ascii-to-text
