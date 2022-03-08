@@ -1,0 +1,11 @@
+Problem Statement:
+A one-time pad is unbreakable, but can you manage to recover the flag? (Wrap with picoCTF{}) nc mercury.picoctf.net 36981 otp.py
+
+Points: 40
+
+Hints:
+1. Maybe there's a way to make this a 2x pad.
+
+Solution:
+
+Flag:
