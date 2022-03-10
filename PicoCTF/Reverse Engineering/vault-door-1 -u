@@ -1,0 +1,16 @@
+Problem Statement:
+This vault uses some complicated arrays! I hope you can make sense of it, special agent. The source code for this vault is here: VaultDoor1.java
+
+Points: 50
+
+Hints:
+1. Look up the charAt() method online.
+
+Solution:
+Last time I had done it manually. This time I tried doing it with Java code and it is not working
+
+Information:
+
+Issues:
+
+Flag:
