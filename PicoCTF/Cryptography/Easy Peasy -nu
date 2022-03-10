@@ -9,8 +9,6 @@ Hints:
 Solution:
 I just copied the code from a writeup. Have not really understood the solution
 
-
-
 Information:
 Pwntools is a CTF framework and exploit development library. Written in Python, it is designed for rapid prototyping and development, and intended to make exploit writing as simple as possible.
 
