@@ -1,0 +1,19 @@
+Problem Statement:
+There is something on my shop network running at nc mercury.picoctf.net 53740, but I can't tell what it is. Can you?
+
+Points: 50
+
+Hints:
+1. What language does a CNC machine use?
+
+Solution:
+nc mercury.picoctf.net 53740 > out.txt
+Then use https://ncviewer.com/ to decode the g-code
+
+Information:
+G-code (also RS-274) is the most widely used computer numerical control (CNC) programming language. It is used mainly in computer-aided manufacturing to control automated machine tools, and has many variants
+
+Issues:
+
+Flag:
+picoCTF{num3r1cal_c0ntr0l_e7749028}
