@@ -1,0 +1,13 @@
+Problem Statement:
+Can you find the flag in file without running it?
+
+Points: 100
+
+Hints:
+1. strings
+
+Solution:
+strings strings | grep pico
+
+Flag:
+picoCTF{5tRIng5_1T_827aee91}
