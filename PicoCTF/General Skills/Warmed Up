@@ -1,0 +1,13 @@
+Problem Statement:
+What is 0x3D (base 16) in decimal (base 10)?
+
+Points: 50
+
+Hints:
+1. Submit your answer in our flag format. For example, if your answer was '22', you would submit 'picoCTF{22}' as the flag.
+
+Solution:
+Convert hex to decimal(https://www.rapidtables.com/convert/number/hex-to-decimal.html)
+
+Flag:
+picoCTF{61}
