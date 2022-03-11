@@ -1,0 +1,69 @@
+Problem Statement:
+We found a brand new type of encryption, can you break the secret code? (Wrap with picoCTF{}) dcebcmebecamcmanaedbacdaanafagapdaaoabaaafdbapdpaaapadanandcafaadbdaapdpandcac new_caesar.py
+
+Points: 60
+
+Hints:
+1. How does the cipher work if the alphabet isn't 26 letters?
+2. Even though the letters are split up, the same paradigms still apply
+
+Solution:
+https://ctftime.org/writeup/26979
+
+Information:
+A formatted string literal or f-string is a string literal that is prefixed with 'f' or 'F'. These strings may contain replacement fields, which are expressions delimited by curly braces {}. While other string literals always have a constant value, formatted strings are really expressions evaluated at run time.
+
+
+Issues:
+
+Flag:
+picoCTF{et_tu?_07d5c0892c1438d2b32600e83dc2b0e5}
+
+
+Program used
+# import string
+import string
+
+# constants
+LOWERCASE_OFFSET = ord("a")
+ALPHABET = string.ascii_lowercase[:16]
+
+# decode function
+def b16_decode(cipher):
+    dec = ""
+    # loop through the cipher 2 characters at a time
+    for c in range(0, len(cipher), 2):
+        # turn the two characters into one binary string
+        b = ""
+        b += "{0:b}".format(ALPHABET.index(cipher[c])).zfill(4)
+        b += "{0:b}".format(ALPHABET.index(cipher[c+1])).zfill(4)
+        # turn the binary string to a character and add
+        dec += chr(int(b,2))
+    
+    # return
+    return dec
+
+# unshift the text
+def unshift(c, k):
+    t1 = ord(c) - LOWERCASE_OFFSET
+    t2 = ord(k) - LOWERCASE_OFFSET
+    return ALPHABET[(t1 - t2) % len(ALPHABET)]
+
+# encrypted flag
+enc = "mlnklfnknljflfmhjimkmhjhmljhjomhmmjkjpmmjmjkjpjojgjmjpjojojnjojmmkmlmijimhjmmj"
+
+# loop through all possible keys
+for key in ALPHABET:
+    # initialize string
+    s = ""
+
+    # loop through the encrypted text
+    for i,c in enumerate(enc):
+        # unshift it based on key
+        s += unshift(c, key[i % len(key)])
+
+    # decode
+    s = b16_decode(s)
+
+    # print key
+    print(s)    
