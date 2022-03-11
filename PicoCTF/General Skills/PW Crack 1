@@ -1,0 +1,10 @@
+Problem Statement:
+Can you crack the password to get the flag?
+Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+Solution:
+python3 level1.py 
+Enter password as e9e8 as mentioned in the python script 
+
+Flag:
+picoCTF{545h_r1ng1ng_ccbfafcb}
