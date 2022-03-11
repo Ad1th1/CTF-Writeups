@@ -1,0 +1,20 @@
+Problem Statement:
+Can you find the flag? shark1.pcapng.
+
+Points: 50
+
+Solution:
+This write-up was useful(https://github.com/vivian-dai/PicoCTF2021-Writeup/blob/main/Forensics/Wireshark%20doo%20dooo%20do%20doo/Wireshark%20doo%20dooo%20do%20doo.md)
+
+Just opened it on Wire-shark
+Analyze and follow.
+Found the flag on stream 5
+
+Information:
+What is a PCAPNG file?
+Packet capture format that contains a "dump" of data packets captured over a network; saved in the PCAP Next Generation file format, a standard format for storing captured data.
+
+Issues:
+
+Flag:
+picoCTF{p33kab00_1_s33_u_deadbeef}
