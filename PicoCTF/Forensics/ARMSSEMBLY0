@@ -1,0 +1,13 @@
+Problem Statement:
+What integer does this program print with arguments 266134863 and 1592237099? File: chall.S Flag format: picoCTF{XXXXXXXX} -> (hex, lowercase, no 0x, and 32 bits. ex. 5614267 would be picoCTF{0055aabb})
+
+
+
+Solution:
+
+Information:
+
+Issues:
+
+Flag:
+picoCTF{5EE79C2B}
