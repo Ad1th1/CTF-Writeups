@@ -1,0 +1,9 @@
+Problem Statement:
+Can you crack the password to get the flag?
+Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+Solution:
+I just went throught the python file, used a hexa to ascii converter to get the password
+
+Flag:
+picoCTF{tr45h_51ng1ng_a3e28409}
