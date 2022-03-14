@@ -1,0 +1,16 @@
+Problem Statement:
+
+Solution:
+Since it's an ELF file, I can't really open it and have decided to examine it on Ghidra instead.
+
+
+Information:
+A debugger is a program that runs other programs, allowing the user to exercise control over these programs, and to examine variables when problems arise.
+
+GNU Debugger, which is also called gdb, is the most popular debugger for UNIX systems to debug C and C++ programs.
+
+GNAT is a free-software compiler for the Ada programming language which forms part of the GNU Compiler Collection
+
+Issues:
+
+Flag:
