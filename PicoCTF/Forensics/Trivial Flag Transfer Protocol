@@ -1,0 +1,21 @@
+Problem Statement:
+Figure out how they moved the flag.
+
+Solution:
+Export TFTP as an object.
+Save the programs. Check out the text file. Use Caeser's cipher to figure out the hidden messages.
+
+steghide extract -sf picture1(/2/3).bmp -p DUEDILIGENCE
+Get the flag.
+
+Information:
+Steghide  is a steganography program that is able to hide data in vari‐
+       ous kinds of image- and audio-files. The color- respectivly sample-fre‐
+       quencies  are  not  changed thus making the embedding resistant against
+       first-order statistical tests.
+
+
+Issues:
+
+Flag:
+picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
