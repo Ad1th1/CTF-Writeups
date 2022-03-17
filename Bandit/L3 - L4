@@ -1,0 +1,5 @@
+sshpass -p `cat bandit3` ssh bandit3@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls -la
+cat .hidden
+nano bandit4 -> pIwrPrtPN36QITSp3EQaw936yaFoFgAB
