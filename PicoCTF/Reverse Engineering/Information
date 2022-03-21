@@ -7,3 +7,19 @@ ARM processors are extensively used in consumer electronic devices such as smart
 >The CMP instruction subtracts the value of Operand2 from the value in Rn . This is the same as a SUBS instruction, except that the result is discarded. 
 
 >The CMN instruction adds the value of Operand2 to the value in Rn . This is the same as an ADDS instruction, except that the result is discarded.
+
+> BLS – Branch on Lower than or Same.
+
+> The B instruction causes a branch to label .
+
+> The RET instruction pops the high-order and low-order bytes of the PC from the stack (and decrements the stack pointer by 2).
+
+>  load ( LDP ) and store pair ( STP )
+
+> The atoi() function converts a character string to an integer value.
+
+> BL (branch and link) and MOV PC, LR are the two essential instructions needed for a function call and return. BL performs two tasks: it stores the return address of the next instruction (the instruction after BL) in the link register (LR), and it branches to the target instruction.
+
+> atoi = ascii to integer = taking inputs
+
+> The SIZE operator can return the size of a C or C++ variable. A variable's size is the product of its LENGTH and TYPE. The TYPE operator can return the size of a C or C++ type or variable. If the variable is an array, TYPE returns the size of a single element of the array.
