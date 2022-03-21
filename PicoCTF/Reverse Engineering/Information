@@ -4,3 +4,6 @@ ARM makes 32-bit and 64-bit RISC multi-core processors. RISC processors are desi
 
 ARM processors are extensively used in consumer electronic devices such as smartphones, tablets, multimedia players and other mobile devices, such as wearables. Because of their reduced instruction set, they require fewer transistors, which enables a smaller die size for the integrated circuitry (IC). The ARM processor’s smaller size, reduced complexity and lower power consumption makes them suitable for increasingly miniaturized devices.
 
+>The CMP instruction subtracts the value of Operand2 from the value in Rn . This is the same as a SUBS instruction, except that the result is discarded. 
+
+>The CMN instruction adds the value of Operand2 to the value in Rn . This is the same as an ADDS instruction, except that the result is discarded.
