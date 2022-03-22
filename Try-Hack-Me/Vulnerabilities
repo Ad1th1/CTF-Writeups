@@ -1,0 +1,7 @@
+> An access control vulnerability is when an attacker can gain access to information or actions not intended for them. 
+
+> IDOR stands for Insecure Direct Object Reference and is a type of access control vulnerability. IDOR vulnerability relies on changing user-supplied data.
+1. Query Component
+2. Post Variables
+3. Cookies
+
