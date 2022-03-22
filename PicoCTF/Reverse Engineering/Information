@@ -23,3 +23,11 @@ ARM processors are extensively used in consumer electronic devices such as smart
 > atoi = ascii to integer = taking inputs
 
 > The SIZE operator can return the size of a C or C++ variable. A variable's size is the product of its LENGTH and TYPE. The TYPE operator can return the size of a C or C++ type or variable. If the variable is an array, TYPE returns the size of a single element of the array.
+
+> .bne -> BNE (short for "Branch if Not Equal") is the mnemonic for a machine language instruction which branches, or "jumps", to the address specified if, and only if the zero flag is clear.
+
+> The ADRP instruction shifts a signed, 21-bit immediate left by 12 bits, adds it to the value of the program counter with the bottom 12 bits cleared to zero, and then writes the result to a general-purpose register.
+
+> NOP does nothing
+
+> ldp : Load Pair of Registers.
