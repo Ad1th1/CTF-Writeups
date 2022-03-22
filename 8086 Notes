@@ -1,0 +1,6 @@
+> The ADD instruction adds the value of Operand2 or imm12 to the value in Rn.
+The ADC instruction adds the values in Rn and Operand2, together with the carry flag.
+
+> ####
+https://www.tutorialspoint.com/microprocessor/microprocessor_8086_instruction_sets.htm
+###
