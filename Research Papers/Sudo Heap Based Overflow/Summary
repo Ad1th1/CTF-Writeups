@@ -1,0 +1,15 @@
+> exploitable by local user without authentication
+
+Vulnerability:
+If Sudo is executed to run a command in "shell" mode (shell -c command):
+
+- either through the -s option, which sets Sudo's MODE_SHELL flag;
+
+- or through the -i option, which sets Sudo's MODE_SHELL and
+  MODE_LOGIN_SHELL flags;
+
+then, at the beginning of Sudo's main(), parse_args() rewrites argv
+(lines 609-617), by concatenating all command-line arguments (lines
+587-595) and by escaping all meta-characters with backslashes (lines
+590-591):
+
