@@ -1,0 +1,2 @@
+> The isset() function checks whether a variable is set, which means that it has to be declared and is not NULL
+> A char ** is a pointer to a pointer to a char
