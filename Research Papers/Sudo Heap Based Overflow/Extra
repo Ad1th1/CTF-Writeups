@@ -1,0 +1,25 @@
+> A legacy version is an old stable release that is still available (and probably supported) because someone might need it (e.g. plugin dependencies that don't work with the newest release), whereas the stable version is the most recent stable release (which will eventually become a legacy version).
+
+> The root account has root privileges. This means it can read and write any files on the system, perform operations as any user, change system configuration, install and remove software, and upgrade the operating system and/or firmware
+
+> The "root" account is the most privileged account on a Unix system. This account gives you the ability to carry out all facets of system administration, including adding accounts, changing user passwords, examining log files, installing software, etc.
+
+> Sudo (superuser do) allows a system administrator to give certain users (or groups of users) the ability to run some (or all) commands as root or another user while logging the commands and arguments.
+
+> subprocess = a process that is part of a larger process 
+
+> Shell mode is a derivative of Comint mode, a general-purpose mode for communicating with interactive subprocesses. 
+
+> Comint mode is a package that defines a general command-interpreter-in-a-buffer. The idea is that you can build specific process-in-a-buffer modes on top of comint mode
+
+> A command interpreter is the part of a computer operating system that understands and executes commands that are entered interactively by a human being or from a program. In some operating systems, the command interpreter is called the shell.
+
+> The shell is an interactive interface that allows users to execute other commands and utilities in Linux and other UNIX-based operating systems.
+
+> A main() function is a user-defined function in C that means we can pass parameters to the main() function according to the requirement of a program.
+
+> parse_args will take the arguments you provide on the command line when you run your program and interpret them according to the arguments you have added to your ArgumentParser object.
+
+> ARGV is a convention in programming that goes back (at least) to the C language. It refers to the “argument vector,” which is basically a variable that contains the arguments passed to a program through the command line.
+
+> 
