@@ -1,0 +1,50 @@
+Lab 2:
+# new is the file name
+
+2]
+1.grep '^[a-zA-Z0-9]\{2\}$' new
+2. grep '^[A-Z]' new
+3. grep '[.]$' new
+4.  grep '[[:space:]]' new
+5. grep '[0-9]' new > redirect.txt
+
+3]
+
+Format:
+RegistrationNo:Name:Department:Branch:Section:Sub1:Sub2:Sub3
+1:Ab:ICT:IT:A:100:19:89
+2:Cd:ICT:CCE:A:100:19:89
+3:Ef:ICT:CCE:A:100:19:89
+4:Gh:ICT:IT:A:100:19:89
+5:Ij:ICT:IT:A:100:19:89
+6:Kl:ICT:IT:A:100:19:89
+7:Mn:ICT:CCE:A:100:19:89
+8:Op:ICT:IT:A:100:19:89
+9:Qr:ICT:CCE:A:100:19:89
+10:St:ICT:IT:A:100:19:89
+
+1. grep -c "IT" studentInformation.txt
+2.
+grep "IT" studentInformation.txt > redir.txt
+sed -i 's/IT/Information Technology/g' redir.txt 
+
+3] grep "MIT" <<< ls *.txt
+
+
+4] 
+wc -l <<< ls *[0-9]* 
+wc -m <<< ls *[0-9]*
+wc -w <<< ls *[0-9]* 
+
+5] wc& # to run in background
+sudo killall -9 wc
+
+
+Extra Information:
+The xargs command is used in a UNIX shell to convert input from standard input into arguments to a command. 
+The g/ means global replace i.e. find all occurrences of foo and replace with bar using sed.
+sed -i 's/old-text/new-text/g' input.txt
+
+Reference:
+Q3.
+https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
