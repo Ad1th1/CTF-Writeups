@@ -1,0 +1,11 @@
+Lab 1:
+1) ls *.txt
+2) ls [0-9]*
+3) find -name '????'
+4) ls[!aeiouAEIOU]
+
+Lab 2:
+1. grep '^[a-zA-Z0-9]\{2\}$' new
+
+
+Extra Info:
