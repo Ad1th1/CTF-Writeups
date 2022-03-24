@@ -1,0 +1,1 @@
+an adaptive framework of incorporating path testing into reliability estimation for modular software systems. Three estimated methods based on common program structures, namely, sequence, branch, and loop structures, are proposed to calculate the path reliability. Consequently, the derived path reliabilities can be applied to the estimates of software reliability.
