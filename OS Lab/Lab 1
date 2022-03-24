@@ -1,0 +1,5 @@
+Lab 1:
+1) ls *.txt
+2) ls [0-9]*
+3) find -name '????'
+4) ls[!aeiouAEIOU]
