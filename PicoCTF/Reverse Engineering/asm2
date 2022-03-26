@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int asm2(int a,int b){
+    int c=b;
+    int d=a;
+    while(a<0xfb46){
+        c=c+1;
+        a = a + 0x74;
+    }
+    return c;
+}
+
+void main(){
+    int ans = asm2(0x4,0x21);
+    printf("%x",ans);
+}
