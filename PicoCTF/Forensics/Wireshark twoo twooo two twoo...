@@ -1,0 +1,8 @@
+Packet capture format that contains a "dump" of data packets captured over a network; saved in the PCAP Next Generation file format, a standard format for storing captured data. Each PCAPNG file contains several blocks or data, which contain different types of information.
+ 
+TShark is a network protocol analyzer. It lets you capture packet data from a live network, or read packets from a previously saved capture
+
+tshark -qz io,phs -r shark2.pcapng  # phs = protocol heirarchy statistics
+
+tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' | grep -v 'response' | grep local | awk '{print $12}' | sed -e 's/\..*//' | base64 -d
+
