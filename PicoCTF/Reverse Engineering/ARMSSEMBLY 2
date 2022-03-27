@@ -1,0 +1,10 @@
+I read through the assembly code and it seemed easy enough. I needed to multiply a number with 3 until it became larger than the number given. It was essentially a loop. 
+
+I faced difficulties when I was trying to turn it back into the flag.
+I first submitted the flag as I got it. Then I converted it to a hexadecimal value. I then used this after referring to a writeup(https://ctftime.org/writeup/26964)
+
+>>> result = int(hex(11208704838),16) & 0xffffffff
+>>> f'{result:08x}'
+
+
+
