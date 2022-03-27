@@ -1,0 +1,25 @@
+This was pretty simple. All I had to do was analyze the code and change the source code a little. THe only difficulty I had was with figuring out what password would be. I took a hint from an online solve and then made this change {String password = "jU5t_a_sna_3lpm18gb41_u_4_mfr340";}
+
+import java.util.*;
+
+class first {
+    public static void main(String args[]) {
+        char[] buffer = new char[32];
+        String password = "jU5t_a_sna_3lpm18gb41_u_4_mfr340";
+        int i;
+        for (i=0; i<8; i++) {
+            buffer[i] = password.charAt(i);
+        }
+        for (; i<16; i++) {
+            buffer[i] = password.charAt(23-i);
+        }
+        for (; i<32; i+=2) {
+            buffer[i] = password.charAt(46-i);
+        }
+        for (i=31; i>=17; i-=2) {
+            buffer[i] = password.charAt(i);
+        }
+        String s = new String(buffer);
+        System.out.println(s);
+    }
+}
