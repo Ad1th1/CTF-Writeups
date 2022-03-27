@@ -1,0 +1,16 @@
+I tried to read the file using 'readelf -a enter_password' and got a list of numbers towards the end. I assumed that they were hexadecimal numbers and tried to convert them to ascii. THat didn't work.
+
+I then saw the main.main function on ghidra and checked it out in my terminal using gdb. I couldn't get the program to run for some reason and then finally realized I had not given it permissions to run in the first place. 
+
+So, I tried out chmod +x enter_password
+It ran after that.
+
+I didn't know what I was supposed to do after that, so I watched a video by Martin Carlisle on the same. 
+
+I installed gef and pwn tools and followed what he did.
+If I am being very honest, I didn't really understand this question at all. I wasn't able to get my python file to run and get the password.
+
+
+
+
+
