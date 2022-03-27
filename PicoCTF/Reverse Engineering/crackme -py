@@ -1,0 +1,2 @@
+I just noticed that the function to decode the flag had never been called. I just added another line to the python code, calling the function.
+decode_secret(bezos_cc_secret )
