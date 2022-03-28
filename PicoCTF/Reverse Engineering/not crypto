@@ -1,0 +1,3 @@
+I downloaded the file and tried running it. Once I realized it was an elf file, I opened it on ghidra. I tried looking through the functions. After this I was a little lost and had to refer to a write-up. 
+I placed a breakpoint at memcmp and ran the code. I found part of the flag at $rdi.
+In order to find the flag, I was confused and had to learn about the x command to find the entire flag
