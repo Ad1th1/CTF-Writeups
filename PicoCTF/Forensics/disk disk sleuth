@@ -1,0 +1,2 @@
+This one was incredibly easy.
+I just downloaded the file. I checked out what it was. Once I realized it was gzip file, I did gunzip file. After that I tried running it. That didn't really work. I tried to do grep pico. That didn't work either. I finally tried strings and strings and grep together.
