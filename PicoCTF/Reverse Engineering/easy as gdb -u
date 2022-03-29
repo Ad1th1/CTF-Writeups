@@ -1,0 +1,4 @@
+I downloaded the file and went through the drill. REalized it was an elf file and ran it on ghidra. The issue was that I couldn't find the main function despite going through the entire list multiple times. I then tried running it on the terminal using ./brute. I got an error stating that it didn't exist. In a desperate attempt, I tried chmod + x brute. It still wouldn't work.
+I tried running it on gdb, but the same error ensued.
+
+I looked through Martin Carlisle's video but couldn't follow either....
