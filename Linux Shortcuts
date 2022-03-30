@@ -1,0 +1,2 @@
+-> sed -i '/whatever you want to do/' filename.txt
+      # charm to get rid of stuff
