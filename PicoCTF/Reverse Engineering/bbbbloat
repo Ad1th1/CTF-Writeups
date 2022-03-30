@@ -1,0 +1,17 @@
+I am super happy because this is the first rev engineering challenge that I was able to solve entirely on my own. It wasn't too hard though.
+
+I downloaded the files, realized it was an elf file and decided to open it in ghidra as usual. As I went through the functions, I noticed one that looked like main. It had this printed in it
+
+  local_20 = 0x4e5f3463665f34;
+  printf("What\'s my favorite number? ");
+  __isoc99_scanf();
+  if (local_48 == 0x86187) {
+    __s = (char *)FUN_00101249(0,&local_38);
+    fputs(__s,stdout);
+    putchar(10);
+    free(__s);
+  }
+  
+  So I ran the file on my terminal. It wouldn't run and I realized I had to use chmod +x to get it running.Once it ran I typed in 10 and that didn't work out. I went through the file again and typed in 86167 and 0x86187. Both of which didn't really work. I then decided to convert the hexadecimal to decimal online and then entered the number to get the flag.
+  
+  I was enthralled, to say the least.
