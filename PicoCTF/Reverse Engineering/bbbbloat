@@ -14,4 +14,4 @@ I downloaded the files, realized it was an elf file and decided to open it in gh
   
   So I ran the file on my terminal. It wouldn't run and I realized I had to use chmod +x to get it running.Once it ran I typed in 10 and that didn't work out. I went through the file again and typed in 86167 and 0x86187. Both of which didn't really work. I then decided to convert the hexadecimal to decimal online and then entered the number to get the flag.
   
-  I was enthralled, to say the least.
+  I was shocked and super-happy, to say the least.
