@@ -1,0 +1,1 @@
+I first downloaded and ran the java file. I then looked through the source code and the hints were in the file. I took the base 64 text and put it in a decoder but was unable to get the answer. I went back to the source code, read the comments and decided to use URL Decode. I still didn't get the flag. Then I used both at once, one after the other until I got the flag.
