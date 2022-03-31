@@ -1,0 +1,10 @@
+To check if a text file exists and if it does, then to move it to another folder
+
+#!/bin/bash
+
+mkdir  hey
+for i in *.text
+do
+mv $i lol
+done
+
