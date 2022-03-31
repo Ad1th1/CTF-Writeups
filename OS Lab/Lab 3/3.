@@ -1,0 +1,7 @@
+Change all file having .txt to .text
+
+#!/bin/bash
+for i in *.txt
+do
+mv "$i" "${i%.txt}.text"
+done
