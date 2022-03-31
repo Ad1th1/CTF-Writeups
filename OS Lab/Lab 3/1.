@@ -1,3 +1,6 @@
+#To check if passed parameter is a file or a directory
+# remember to use chmod +x 
+
 #!/bin/bash
 
 PASSED=$1
