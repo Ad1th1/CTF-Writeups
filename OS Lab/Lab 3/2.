@@ -1,0 +1,7 @@
+Find pattern inside files
+
+#!/bin/bash
+
+echo "Enter the pattern"
+read pattern
+grep  $pattern <<< ls *.txt
