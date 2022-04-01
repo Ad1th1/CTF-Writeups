@@ -1,16 +1,2 @@
-Problem Statement:
-Ron just found his own copy of advanced potion making, but its been corrupted by some kind of spell. Help him recover it!
-
-Solution:
-I literally had no idea what to do. The hint from this writeup(https://activities.tjhsst.edu/csc/writeups/picomini-redpwn-apm) suggested that I check out a hex-editor
-
-Information:
-A hex editor is a special type of editor that can open any type of file and display its contents, byte by byte.
-
-Most of the time when you open a file, you are seeing the program’s interpretation of that file’s contents. Even plaintext files contain invisible characters that denote the beginning of the file, where lines should break, the end of the file, and more.
-
-You can see these invisible characters (and regular characters, too) with a hex editor, where they appear as hexadecimal values.
-
-Issues:
-
-Flag:
+The file, on applying strings had an IHDR header indicating that it was a PNG file. I opened it in hexedit and corrected the header 
+format to make it display as a PNG file after which I opened it on steg where I could easily find the flag
