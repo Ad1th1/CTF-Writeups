@@ -1,0 +1,7 @@
+This one took a while. I did the normal operations first, strings, ran it on ghidra and all of that. On ghidra, I couldn't really 
+understand what was written. So I referred to the hint online and decided to look into what upx was. I installed upx using sudo apt install
+but upx -d unpackme-upx just wasn't working. I googled a bit, installed upx-ucl and used that instead. That seemed to do the trick.
+The code on Ghidra was readable now. It was fairly simple. I just had to enter the same number as was given in the compare function.
+I had to convert it to decimal first. I took a long time trying to convert it to ASCII for some reason. Then I got irritated and just used 
+my calculator to do the conversion.
+
