@@ -1,0 +1,18 @@
+I used the help of a write-up for this one.
+My python script kept bailing on me until I realized what my t1 and t2 were supposed to be.
+
+# coding = utf8
+text = ' stuff in the downloaded file  '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             '
+
+t1 = ' '
+t2 =  ' '
+ans =' '
+
+for char in text:
+    if char == t1:
+        ans+='0'
+    else:
+        ans+='1'
+print(ans)
+
+Then I just had to convert binary to ASCII
