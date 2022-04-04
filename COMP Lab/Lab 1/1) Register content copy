@@ -1,0 +1,12 @@
+//copy 1 byte from 1 register to another
+
+code segment:
+	assume cs: code
+start:
+	mov al ,10h
+	mov bl, al
+	
+	mov ah, 4ch
+	int 21h
+code ends
+end start
