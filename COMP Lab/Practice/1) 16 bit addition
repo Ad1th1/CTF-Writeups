@@ -1,0 +1,26 @@
+; to add 2 16 bit numbers stored in data segment and display in data segment
+
+data segment
+	num1 db ffh
+	num2 db feh
+	sum db 00h
+	carry db 00h
+data ends
+
+code segment
+	assume cs:code, ds:data
+start:
+	mov ax, data
+	mov ds, ax
+	mov ah, 00h
+	mov al, num1
+	mov bl, num2
+	clc
+	adc al,bl
+	mov sum, al
+	adc carry, 0
+
+	mov ah, 4ch
+	int 21h
+code ends
+end start
