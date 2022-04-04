@@ -1,0 +1,36 @@
+DATA SEGMENT
+BCD DW 1111H
+HEX DW ?
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS: CODE, DS: DATA
+START: 
+	MOV AX, DATA
+	MOV DS, AX
+	MOV AX, 0000H
+	MOV BX, 0001H		; weight for lsd
+	
+CALL BCD2BIN
+	MOV BX, 000AH
+CALL BCD2BIN
+	MOV BX, 0064H
+CALL BCD2BIN
+	MOV BX, 03E8H
+CALL BCD2BIN
+	MOV AH, 4CH
+	INT 21H
+	
+bcd2bin proc near
+	mov ax,bcd
+	and ax, 000fh
+	mul bx
+	add hex, ax
+	mov cl,04
+	ror bcd, cl
+	ret
+	
+bcd2bin endp
+
+CODE ENDS
+END START
