@@ -1,0 +1,12 @@
+// copy a word from a register to another
+
+code segment:
+	assume cs: code
+start:
+	mov ax, 210ah
+	mov bx, ax
+	
+	mov ah, 4ch
+	int 21h
+code ends
+end start
