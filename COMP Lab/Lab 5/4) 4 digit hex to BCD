@@ -1,0 +1,44 @@
+
+CODE SEGMENT
+ASSUME CS: CODE, DS: DATA
+START: 
+	mov ax, fffd
+	mov bx, ffff
+	mov cx, ffff
+	 
+back:
+	 inc ch
+	 sub ax, 2710
+	 inc back
+	 add ax, 2710 
+	 inc cl
+	 sub ax, 3e8
+	 jnc back1
+	 add ax, 3e8
+back2: 
+	 inc bh
+	 sub ax, 64
+	 jnc back2
+	 add ax, 64
+	 
+back3:
+	  inc bl
+	  sub ax, oa
+	  jnc back3
+	  add ax, oa
+	  
+	  mov dl,cl
+	  mov cl, 04
+	  ror dl,cl
+	  add bh, dl
+	  ror bl, cl
+	  add bl,al
+	  mov [2000],bl
+	  mov  [2000 + 1], bh
+	  mov  [2000 + 2], ch
+	  
+	  mov ah,4ch
+	  int 21h
+	  
+CODE ENDS
+END START
