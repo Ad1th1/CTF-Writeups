@@ -1,0 +1,21 @@
+// hello world program using code segment only
+
+code segment
+	assume cs: code, ds: code
+start:
+	jmp skip
+	msg db 'HELLO WORLD', '$'
+
+skip:
+	mov ax, cs
+	mov ds, ax
+	
+	mov ah, 09h
+	mov dx, offset msg
+	int 21h
+
+	mov ah, 4ch
+	mov al, 00h
+	int 21h
+code ends
+end start
