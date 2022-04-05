@@ -1,0 +1,54 @@
+readnum macro num
+	mov ah, 01h	;read input
+	int 21h		; call DOS service
+	sub al, '0'	; ASCII num to decimal
+	mov bh, 0ah
+	mul bh
+	mov num, al
+	mov ah, 01h
+	int 21h
+	sub al,'0'
+	add num, al
+	endm
+
+printstring macro msg
+	mov ah, 09h		; display string function
+	mov dx, offset msg	; initialize dx to msg
+	int 21h			; call DOS service
+	endm
+
+data segment
+	cr equ 0dh
+	lf equ 0ah
+
+	msg1 db 'Enter number' , '$'
+	msg2 db cr,lf, 'Even number' , '$'
+	msg3 db cr,lf, 'Odd number' , '$'
+
+	num db ?
+data ends
+
+code segment
+	assume cs: code, ds:data
+start:	mov ax, data
+	mov ds, ax
+	
+	printstring msg1
+	readnum num	
+
+	mov ah, 00
+	mov al, num
+	mov bl, 02
+	div bl
+	cmp ah, 00
+	je evennum
+	printstring msg3
+	jmp skip
+evennum:
+	printstring msg2
+skip:
+	mov ah, 4ch
+	mov al, 00h
+	int 21h
+code ends
+end start
