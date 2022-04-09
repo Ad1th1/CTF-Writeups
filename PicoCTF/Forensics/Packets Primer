@@ -1,0 +1,8 @@
+This one was easy.
+I first opened it on wireshark but since this was a question that had been asked only for a 100 points. I decided to analyze the file first.
+I applied cat grep and echo. I finally used strings and got the flag.
+This is a command I used to get rid of the whitespace.
+
+strings network-dump.flag.pcap | grep "p i c o" | tr -d ' '
+
+picoCTF{p4ck37_5h4rk_b9d53765}
