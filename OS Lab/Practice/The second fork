@@ -1,4 +1,7 @@
 #include<stdio.h>
+#include<sys/types.h>
+#include<unlisted.h>
+
 int main()
 {
 pid_t pid;
@@ -7,8 +10,14 @@ if(pid == -1){
 printf("failed to create child");
 }
 else if(pid>0){
-printf("from child")
+printf("from parent %d,%d",getpid(),getpid());
+}
+else{
+printf("from child %d,%d",getpid(),getpid());
 }
 printf("\nhello\n");
 sleep(2);
 }
+
+
+ps command = helps find processes running
