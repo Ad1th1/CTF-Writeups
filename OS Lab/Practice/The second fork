@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+pid_t pid;
+pid=fork();
+if(pid == -1){
+printf("failed to create child");
+}
+else if(pid>0){
+printf("from child")
+}
+printf("\nhello\n");
+sleep(2);
+}
