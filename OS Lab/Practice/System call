@@ -1,0 +1,25 @@
+// Demo wait() systemcall
+
+#include<stdlib.h>
+#include<stdio.h>
+#include<sys/types.h>
+#include<unistd.h>
+#include<sys/wait.h>
+int main()
+{
+int status;
+pid_t rtn;
+rtn = fork();
+if(rtn == 0){
+printf("\n in child \n");
+exit(0);
+}
+else{
+printf("\n in parent");
+wait(&status);
+if(WIFEXITED(status))   //normal termination
+printf("\n child returned %d\n",WEXITSTATUS(status)):
+}
+}
+
+//wifexited and wexitstatus are macros
