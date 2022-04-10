@@ -1,0 +1,28 @@
+Transfer 10 bytes of data in data segment where blocks are overlapping
+
+data segment
+  array1 db 11h,12h,13h,14h,15h,16h,17h, 18h,19h,20h;
+  array2 db 5 dup(0)
+  count db 10
+data ends
+code segment
+assume cs:code, ds:data
+start:  mov ax, data
+        mov ds, ax
+        lea si, array1
+        lea di, array2  
+        mov ch, 00h 
+        mov cl, count
+        add si,9
+        add di,4
+back: mov al,[si]
+      mov [di],al
+      dec si
+      dec di
+      loop back
+      mov ah,4ch
+      int 21h
+code ends
+end start
+        
+        
