@@ -1,0 +1,23 @@
+-> used to replace current process address space with new process address space
+
+#include<unistd.h>
+#include<stdio.h>
+int main(){
+char *filename="/bin/ls";
+char *arg1="-a";
+char *arg2="-s";
+execlp(filename,arg1marg2,NULL);
+return 0;
+}
+
+OR
+
+#include<unistd.h>
+#include<stdio.h>
+int main(){
+char *filename="/bin/ls";
+char *arg[]={"-a","-s",NULL};
+// char *arg2="-s";
+execv(filename,arg1marg2,NULL);   //execv ; v stands for vector
+return 0;
+}
