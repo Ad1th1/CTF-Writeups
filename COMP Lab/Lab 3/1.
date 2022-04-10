@@ -1,0 +1,25 @@
+Add two 16 - bit hexadecimal numbers stored in registers and store the result in data
+segment
+
+data segment
+  res dd 0
+data ends
+
+code segment
+assume cs: code, ds:data
+start: mov ax, data
+       mov ds, ax
+       mov ax, 0ffffh
+       mov bx, 11a2h
+       clc
+       adc ax, bx
+       mov si
+       mov [si],ax
+       add si, 2
+       mov dx, 0000h
+       adc dx, 0h
+       mov [si], dx
+       mov ah, 4ch
+       int 21h
+code ends
+end start
