@@ -1,0 +1,23 @@
+Subtract two 16 - bit numbers in memory locations and store the result in data
+segment
+
+data segment
+  num1 dw 1105h
+  num2 dw 1001h
+  diff dw 0
+  borr db 0
+data ends
+code segment
+assume cs: code, ds: data
+start:  mov ax, data
+        mov ds, ax
+        mov ax, num1
+        mov bx, num2
+        sub ax, bx
+        das
+        mov diff, ax
+        sbb borr, 0h
+        mov ah, 4ch
+        int 21h
+code ends
+end start
