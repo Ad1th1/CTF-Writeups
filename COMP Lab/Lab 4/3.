@@ -1,0 +1,25 @@
+Multiplication of 16 bit unsigned numbers by repetitive addition.
+
+data segment
+  num1 dw 5678h
+  num2 dw 1234h
+  res dd 0
+data ends
+code segment
+assume cs: code, ds: data
+start: mov ax, data
+       mov ds,ax
+       mov ax, 0
+       mov dx, 0
+       mov cx, num2
+       clc
+back:  add ax, num1
+       adc dx, 0
+loop back
+        lea si, wor ptr res
+        mov [si], ax
+        mov [si+2], dx
+        mov ah, 4ch
+        int 21h
+code ends
+end start
