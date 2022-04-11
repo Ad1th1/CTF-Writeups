@@ -1,0 +1,27 @@
+Add two 32 - bit hexadecimal numbers in data segment and store the result in data
+segment.
+
+data segment
+  num1 dl 0000 1a05h
+  num2 dw 1101 ffff9h
+  sum dd 0
+data ends
+code segment
+  assume cs: code, ds; data
+  start: mov ax, data
+          mov ds, ax
+          mov ax, num1
+          mov bx, num2
+          clc
+          adc ax, bx
+          mov dx, num1 + 2
+          mov bx, num2 + 2
+          adc dx, bx
+          lea si
+          mov [si], ax
+          add si, 2
+          mov [si], dx
+          mov ah, 4ch
+          int 21h
+code ends
+end start
