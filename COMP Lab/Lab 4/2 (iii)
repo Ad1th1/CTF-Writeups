@@ -1,0 +1,24 @@
+32 - bit unsigned number by 16 - bit unsigned number  
+
+data segment
+  num1 dd 70A0FF34h
+  num2 dw FFF4h
+  quo dw 0
+  rem dw 0
+data ends
+code segment
+assume cs: code, ds: data
+start: mov ax, data
+       mov ds, ax
+       lea si, wordptr num1
+       mov ax, [si]
+       add si, 2
+       mov dx, [si]
+       mov bx, num2
+       div bx
+       mov quo, ax
+       mov rem, dx
+       mov ah, 4ch
+       int 21h
+code ends
+end start
