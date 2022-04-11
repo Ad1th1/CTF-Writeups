@@ -1,0 +1,30 @@
+Subtract two 32 - bit numbers in data segment and store the result in data segment.
+
+data segment
+  num1 dd 12345678h
+  num2 dd 01234567h
+  diff dd 0
+  borr db 0
+data ends
+code segment
+assume cs: code, ds: data
+start: mov ax, data
+       mov ds, ax
+       mov cx, 4
+       lea si, num1
+       lea di, diff
+back:  mov al,[si]
+       mov bl, [si+4]
+       sbb al, bl
+       das
+       mov [di],al
+       inc si
+       inc di
+loop back
+       sbb borr, 0h
+       mov ah, 4ch
+       int 21h
+code ends
+end start
+       
+       
