@@ -1,0 +1,14 @@
+I first used gunzip to find an image. I tried strings and cat. Those didn't work.
+I then looked up some writeups and tried this thing called qemu. That didnt really work
+
+I then saw Martin Carlisle's video and tried fls -r on the file. 
+The linux partition began at 2048 - so I did  fls -r dds2-alpine.flag.img -o 2048 | grep down
+
+The hint had mentioned a file called down-at-the bottom-text. 
+The output stated that the file had a node of 18291
+
+I thus tried out icat 
+icat ./dds2-alpine.flag.img -o 2048 18291
+
+and got the flag in 
+
