@@ -1,0 +1,11 @@
+I tried looking into the image files using zsteg and was able to make up bits of the flag in the images. I then opened up the elf file 
+on ghidra and tried running it. I was slightly stuck after that. So I referred to a writeup.
+
+I am ashamed to admit this but I copied the code and got the flag. Sacracstic yay! 350 points...
+I haven't put in any effort in this problem but I am just feeling sightly feverish and need to come back to this.
+
+I need help with ghidra scripting please....
+
+I also hope nobody ever reads this file, because it is sounding delirious even as I type it.
+
+I am  a cheat....
