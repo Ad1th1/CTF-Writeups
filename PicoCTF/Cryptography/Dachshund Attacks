@@ -1,2 +1,10 @@
 Information:
-The Wiener's attack, named after cryptologist Michael J. Wiener, is a type of cryptographic attack against RSA. The attack uses the continued fraction method to expose the private key d when d is small.
+The Wiener's attack, named after cryptologist Michael J. Wiener, is a type of cryptographic attack against RSA. The attack uses the 
+continued fraction method to expose the private key d when d is small.
+
+For some reason, RSA had always freaked me out and I had forever been dreading this problem. 
+
+It was pretty easy. I just threw the numbers into an RSA decoder and got the answer, easy as that.
+
+ On a more general basis, if the size of d is lower than 0.29 times the size of n (in bits) then there exists an efficient key recovery
+ attack. The accepted wisdom is that trying to get a d much smaller than n is a bad idea for security.
