@@ -1,0 +1,10 @@
+This one was pretty easy and I am a lil too proud to say that I did it without referring to a write-up.
+
+I mostly downloaded the file and did a grep command to find the line number the given username was located at.
+I struggled a little with this. I tried opening a vim editor and adding line numbers, but eventually just decided to go with grep -n
+
+Then I went through passwords.txt, printed passwords until line 378. Found a bit of text that was seemingly the flag.
+
+Since this was a cryptography question, I assumed it was either rot or a Caeser cipher.
+
+I checked out a caeser decoder first and found the flag.
