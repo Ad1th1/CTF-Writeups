@@ -28,7 +28,10 @@ RegistrationNo:Name:Department:Branch:Section:Sub1:Sub2:Sub3
 grep "IT" studentInformation.txt > redir.txt
 sed -i 's/IT/Information Technology/g' redir.txt 
 
+3. 4. Incomplete
+
 3] grep "MIT" <<< ls *.txt
+sed 's/mit/Manipal Institute of Technology/g' mit1
 
 
 4] 
@@ -39,6 +42,8 @@ wc -w <<< ls *[0-9]*
 5] wc& # to run in background
 sudo killall -9 wc
 
+Additional Question:
+1. sed -r 's/.(.)$/\1/' 1.txt
 
 Extra Information:
 The xargs command is used in a UNIX shell to convert input from standard input into arguments to a command. 
