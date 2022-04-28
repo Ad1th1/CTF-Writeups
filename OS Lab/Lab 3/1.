@@ -3,15 +3,17 @@
 
 #!/bin/bash
 
-PASSED=$1
+file=$1
 
-if [ -d "${PASSED}" ] ; then
-    echo "$PASSED is a directory";
+if [ -f "$file" ]
+then
+        echo "file"
 else
-    if [ -f "${PASSED}" ]; then
-        echo "${PASSED} is a file";
-    else
-        echo "${PASSED} is not valid";
-        exit 1
-    fi
+if [ -d "$file" ]
+then
+        echo "directory"
+else
+        echo "invalid"
 fi
+fi
+
