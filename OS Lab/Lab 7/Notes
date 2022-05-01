@@ -1,0 +1,29 @@
+Semaphores: 
+-> proposed by Djikstra
+-> to solve synchronization problem
+-> manage concurrent processes using simple integer
+-> semaphore = non-negative variable, shared between threads -> used to solve the critical section problem
+-> 2 operations => wait() -> P and signal() -> V
+
+Definition of wait:   //want to use the shared resource
+P(Semaphore S){
+  while(S<=0);  //no op
+  S--
+  }
+
+
+Definition of signal:   //Released the shared resource
+V(Semaphore S){
+  S++;
+  }
+
+2 types of semaphores
+
+1) Binary 
+  -> 0 and 1 values
+  -> known as mutex locks = locks that provide mutual exclusion
+  
+ 2) Counting semaphore
+  -> value ranges over unrestricted domain
+  -> controls access to a resource that has multiple instances
+  
