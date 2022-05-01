@@ -87,3 +87,6 @@ int main(){
     sem_destroy( &full );
     sem_destroy( &empty );
 }
+
+// Compile using -lpthread -lrt flag
+// For example: gcc 1.c -lpthread -lrt
