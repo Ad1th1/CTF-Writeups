@@ -1,0 +1,42 @@
+Solved:
+3a) ls *[text]
+3b) ls *[0-9]*
+3c) ls ????
+3d) ls [!aeiouAEIOU]*
+
+
+-> shell = envt. to run commands, programs and scripts
+-> shell prompt $ = command prompt created by shell
+-> 2 major types of shells:
+  1. C shell 
+  2. Bourne Shell
+-> original Unix shell = written in 1970's by Stephen R Bourne
+-> Bourne shell is installed as /bin/sh on most UNIX versions
+
+\ = escape character
+/ = directory seperator
+. = Current directory
+.. = Parent directory
+~ = User home directory
+* = 0 or more characters in a file name
+? = single character in a filename
+[] = range of values
+| = pipe
+> = redirect output of a command into a new file, owerwrites
+>> = appends output of a command into a new file
+< = redirects file as input to a program
+<< = reads from stream literal
+<<< = reads from a string
+; = command seperator
+&& = command seperator that runs only second command if first finishes without errors
+& = executes commands in background
+
+-> Common commands are located in the path of the shell
+-> PATH is an environment variable
+
+-> UNIX is case-sensitive
+
+-> Help in UNIX = man, --help,-h
+-> man -k permission => for when you don't remember the command-name
+
+
