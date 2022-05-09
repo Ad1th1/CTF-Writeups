@@ -39,4 +39,31 @@ Solved:
 -> Help in UNIX = man, --help,-h
 -> man -k permission => for when you don't remember the command-name
 
+-> pwd = print working directory
+
+Wildcards:
+? = single character
+* = string of characters
+[] = character in set
+[!] = character not in set
+\ = escape chracter
+
+-> The process of matching expressions containing wildcards to filenames is called wildcard
+expansion or globbing
+
+-> which = shows command path
+-> whereis = locates program, source code and manual page
+-> locate = search for files anywhere on the file-system
+
+-> PIPING
+-> REDIRECTION
+
+CTRL + C = Halts the current command
+CTRL + Z = Stops the current command
+CTRL + D = Logout the current session
+CTRL + W = Erases one word in the current line
+CTRL + U = Erases the whole line
+!! = repeats last command
+exit = logout of the current session
+
 
