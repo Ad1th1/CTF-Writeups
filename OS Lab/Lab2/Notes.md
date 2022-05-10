@@ -24,7 +24,14 @@
     -> Read, Execute, and Display
     -> Stream editor
     -> sed '' q = echo essentially
-
+    -> -e '1d' = removes first line
+    -> -f : Next argument is a file containing editing commands. 
+    -> '1i' means to include the following before reading the first line
+    -> -i = make the change permanent
+    -> 'a' = after first
+    -> 'i' = before
+    -> '$' = last
+    
 -> cut
    
 -> ps
