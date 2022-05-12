@@ -1,7 +1,9 @@
 Change all file having .txt to .text
 
+single line command
+
 #!/bin/bash
 for i in *.txt
 do
-mv "$i" "${i%.txt}.text"
+rename 's/\.txt$/.text/' *.txt
 done
