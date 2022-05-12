@@ -4,4 +4,6 @@ Find pattern inside files
 
 echo "Enter the pattern"
 read pattern
-grep  $pattern <<< ls *.txt
+
+ls | grep *$pattern*
+
