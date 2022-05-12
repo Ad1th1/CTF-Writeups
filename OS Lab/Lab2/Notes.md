@@ -1,3 +1,16 @@
+grep
+sort
+wc
+sed
+tr
+ps
+kill
+chmod
+echo
+bc
+vi
+
+
 -> grep Y
 
 -> sort Y
