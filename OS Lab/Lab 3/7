@@ -1,4 +1,10 @@
+  GNU nano 4.8                          2.sh                                    
 #!/bin/bash
 
-sed -i '2~2d' filename  # for odd lines
-sed -i '1~2d' filename  # for even lines
+read filename
+sed -i '2~2d' $filename 
+
+
+
+
+
