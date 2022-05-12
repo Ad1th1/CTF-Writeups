@@ -31,3 +31,7 @@ ulimit
 umask = allows you to determine or specify the default access (protection) mode for new files you create
 
 -> Shell variables change during the execution of the program. 
+
+Control Statements:
+1. if then fi
+2. 
