@@ -1,36 +1,37 @@
 Completed Rooms
 
-1. OhSINT
-2. Security Awareness
-3. Principles of security
-4. PenTesting Fundamentals
-5. Windows x64 Assembly
-6. Learning Cybersecurity
-7. Intro to LAN
-8. What is networking
-9. Learn and Win Prizes
-10. DNS in detail
-11. Linux Fundamentals Part 1
-12. Linux Fundamentals Part 2
-13. Linux Fundamentals Part 3
-14. Cryptography for Dummies
-15. Bash Scripting
-16. Starting out in Cybersec
-17. Tutorial
-18. Python Basics
-19. History of Malware
-20. Regular Expressions
-21. Introductory Researching 
-22. Google Dorking
-23. Introductory Networking
-24. Sudo Buffer Overflow
-25. Open VPN
-26. The find command
-27. c4ptur3-th3-flag
-28. Learn and win prizes #2
-29. Welcome
-30. How to use tryhackme
-31. The hacker methodology
-32. Nmap
-33. OSI Model
-34. Intro to defensive Security
+1. HTTP in detail
+2. OhSINT
+3. Security Awareness
+4. Principles of security
+5. PenTesting Fundamentals
+6. Windows x64 Assembly
+7. Learning Cybersecurity
+8. Intro to LAN
+9. What is networking
+10. Learn and Win Prizes
+11. DNS in detail
+12. Linux Fundamentals Part 1
+13. Linux Fundamentals Part 2
+14. Linux Fundamentals Part 3
+15. Cryptography for Dummies
+16. Bash Scripting
+17. Starting out in Cybersec
+18. Tutorial
+19. Python Basics
+20. History of Malware
+21. Regular Expressions
+22. Introductory Researching 
+23. Google Dorking
+24. Introductory Networking
+25. Sudo Buffer Overflow
+26. Open VPN
+27. The find command
+28. c4ptur3-th3-flag
+29. Learn and win prizes #2
+30. Welcome
+31. How to use tryhackme
+32. The hacker methodology
+33. Nmap
+34. OSI Model
+35. Intro to defensive Security
