@@ -1,6 +1,6 @@
 Completed Rooms
 
-1. Learn and win prizes #2
+1. OhSINT
 2. Security Awareness
 3. Principles of security
 4. PenTesting Fundamentals
@@ -12,17 +12,24 @@ Completed Rooms
 10. DNS in detail
 11. Linux Fundamentals Part 1
 12. Linux Fundamentals Part 2
-13. Cryptography for Dummies
-14. Bash Scripting
-15. Starting out in Cybersec
-16. Tutorial
-17. Python Basics
-18. History of Malware
-19. Regular Expressions
-20. Introductory Researching 
-21. Google Dorking
-22. Introductory Networking
-23. Sudo Buffer Overflow
-24. Open VPN
-25. The find command
-26. c4ptur3-th3-flag
+13. Linux Fundamentals Part 3
+14. Cryptography for Dummies
+15. Bash Scripting
+16. Starting out in Cybersec
+17. Tutorial
+18. Python Basics
+19. History of Malware
+20. Regular Expressions
+21. Introductory Researching 
+22. Google Dorking
+23. Introductory Networking
+24. Sudo Buffer Overflow
+25. Open VPN
+26. The find command
+27. c4ptur3-th3-flag
+28. Learn and win prizes #2
+29. Welcome
+30. The hacker methodology
+31. Nmap
+32. OSI Model
+33. Intro to defensive Security
