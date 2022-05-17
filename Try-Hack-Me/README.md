@@ -29,7 +29,8 @@ Completed Rooms
 27. c4ptur3-th3-flag
 28. Learn and win prizes #2
 29. Welcome
-30. The hacker methodology
-31. Nmap
-32. OSI Model
-33. Intro to defensive Security
+30. How to use tryhackme
+31. The hacker methodology
+32. Nmap
+33. OSI Model
+34. Intro to defensive Security
