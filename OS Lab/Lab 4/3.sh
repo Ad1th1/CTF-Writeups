@@ -1,18 +1,8 @@
-!/bin/bash
+                                     
+#!/bin/bash
 
-n=$#
-s=($*)
-echo "Array Before Sorting: "${s[*]}
-for ((i=0;i<$n;i++))
+for var in $*
 do
-    for ((j=0;j<n-i-1;j++))
-    do
-        if [[ ${s[j]} > ${s[$((j+1))]} ]]
-        then
-            temp=${s[j]}
-            s[j]=${s[$((j+1))]}
-            s[$((j+1))]=$temp
-        fi
-    done
+        echo $var >>lol
 done
-echo "Array after sorting: "${s[*]}
+sort lol
