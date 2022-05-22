@@ -1,3 +1,5 @@
+#copy file 
+
 #!/bin/bash
 
 read a
