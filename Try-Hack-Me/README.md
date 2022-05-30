@@ -34,3 +34,4 @@ Completed Rooms
 32. The hacker methodology
 33. Nmap
 34. OSI Model
+35. Volatility
