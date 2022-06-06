@@ -35,3 +35,4 @@ Completed Rooms
 33. Nmap
 34. OSI Model
 35. Volatility
+36. MAL: Malware Introductory
